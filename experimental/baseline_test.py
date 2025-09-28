@@ -13,7 +13,7 @@ import base64
 # exact_match = evaluate.load("./evaluation/metrics/exact_match")
 # f1 = evaluate.load('./evaluation/metrics/f1')
 
-image_folder = "/data/kuangjy/symbol/math_data/output_images_multimath"
+image_folder = "images"
 
 system_prompt_zh = """你正在执行多模态复杂符号理解任务，请一步步思考"""
 system_prompt_en = """You are performing a multimodal complex symbol understanding task. Please think step by step"""
