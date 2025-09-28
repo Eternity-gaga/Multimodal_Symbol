@@ -22,7 +22,7 @@ headers = {
 ### chat prompts
 instr = "请根据参考答案判断预测的答案是否正确，不需要考虑单位，格式等是否一致，只看数学含义是否正确。只输出'True' or 'False'"
 
-def classify_math_tasks(input_data, output_file='/data/kuangjy/symbol/experimental/results-multimath/Qwen-2.5-vl-instruct-2048/predictions-score.jsonl'):
+def classify_math_tasks(input_data, output_file='output_PATH'):
     level_task_dict = defaultdict(list)
     
     # 将数据按level和task分类
@@ -115,11 +115,11 @@ def classify_math_tasks(input_data, output_file='/data/kuangjy/symbol/experiment
     }
     
     # 保存最终的结果到文件
-    with open('/data/kuangjy/symbol/experimental/results-multimath/Qwen-2.5-vl-instruct-2048/final_score.json', 'w', encoding='utf-8') as f:
+    with open('results.json', 'w', encoding='utf-8') as f:
         json.dump(final_results, f, ensure_ascii=False, indent=4)
 
 # 读取输入数据
-with open('/data/kuangjy/symbol/experimental/results-multimath/Qwen-2.5-vl-instruct-2048/output.jsonl', 'r') as f:
+with open('input_PATH', 'r') as f:
     lines = f.readlines()
     input_data = [json.loads(line) for line in lines]
 
