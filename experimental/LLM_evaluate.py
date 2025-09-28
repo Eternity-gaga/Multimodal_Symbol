@@ -11,8 +11,8 @@ import os
 from transformers import AutoTokenizer
 from collections import defaultdict
 
-API_URL = "https://api.chatanywhere.tech/v1/chat/completions"
-API_KEY = "sk-r3ivtcnPlnNBlLsHYEhPj748yp59ObtiOb5JFFx8afsOyUP6"
+API_URL = "YOUR_URL"
+API_KEY = "YOUR_KEY"
 
 headers = {
     "Content-Type": "application/json",
