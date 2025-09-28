@@ -72,7 +72,7 @@ def calculate_accuracy(data):
     
     return processed_data, overall_accuracy, level_task_accuracy
 
-def main(input_file='/data/kuangjy/symbol/experimental/results-multimath/Qwen-2.5-vl-instruct-2048/predictions.jsonl', output_file='output.jsonl', result_file='results.json'):
+def main(input_file='input_PATH', output_file='output.jsonl', result_file='results.json'):
     data = []
     with open(input_file, 'r', encoding='utf-8') as infile:
         for line_number, line in enumerate(infile, start=1):
